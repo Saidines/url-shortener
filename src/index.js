@@ -6,15 +6,18 @@ import dotenv from 'dotenv';
 import {user} from './model/user.js';
 import register from './routes/public_routes/register.js';
 import login from './routes/public_routes/login.js';
+import test from './routes/protected_routes/test.js';
+import create_slug from './routes/protected_routes/create_slug.js';
+import redirect from './routes/public_routes/redirect.js';
 const app=express();
 dotenv.config();
 app.use(express.json());
 app.use('/register',register);
 app.use('/login',login);	
-	
-	
-
-console.log("process.env.MONGO_URL");
+app.use('/test',test);	
+app.use('/url',create_slug);
+app.use('/',redirect);
+//console.log("process.env.MONGO_URL");
 
 mongoose.connect(process.env.MONGO_URL,{
 	useNewUrlParser:true,
