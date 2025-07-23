@@ -1,6 +1,6 @@
 import express from 'express';
 import url from '../../model/url.js';
-import authenticate from '../../authenticate.js';
+import authenticate from '../../utils/authenticate.js';
 const router=express.Router();
 
 router.post('/',authenticate,async(req,res)=>{

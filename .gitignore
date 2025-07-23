@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build output (optional, if using build tools like TypeScript/Babel)
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Optional: lockfiles (if you only use one package manager)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
